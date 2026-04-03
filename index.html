@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>EduPanel</h2>
+    <ul>
+        <li onclick="showMessage('Home')">🏠 Home</li>
+        <li onclick="showMessage('Files')">📁 Your Files</li>
+        <li onclick="showMessage('Downloads')">⬇ Downloads</li>
+        <li onclick="showMessage('Progress')">📊 Progress</li>
+        <li onclick="showMessage('Settings')">⚙ Settings</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <h1 id="welcome">Welcome Back 👋</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Files Uploaded</h3>
+            <p id="files">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Downloads</h3>
+            <p id="downloads">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Progress</h3>
+            <p id="progress">0%</p>
+        </div>
+
+    </div>
+
+    <div class="actions">
+        <button onclick="upload()">Upload File</button>
+        <button class="secondary" onclick="viewFiles()">View Files</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
